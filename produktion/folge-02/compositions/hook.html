@@ -25,21 +25,21 @@
         <path d="M60 470 L210 480 M440 470 L290 480" stroke="rgba(255,255,255,0.25)" stroke-width="40"/>
       </svg>
     </div>
-    <div id="hk-title-c" class="clip" data-start="0" data-duration="4.6"><h1 id="hk-title">Deine Jeans ist<br/><span class="y">weiter gereist</span><br/>als du.</h1></div>
-    <div id="hk-guess-c" class="clip" data-start="4.6" data-duration="4.9"><div id="hk-guess"><div id="hk-guess-km">??? km</div><div id="hk-guess-sub">Schätz mal! &#8595;</div></div></div>
+    <div id="hk-title-c" class="clip" data-start="0" data-duration="4.1"><h1 id="hk-title">Deine Jeans ist<br/><span class="y">weiter gereist</span><br/>als du.</h1></div>
+    <div id="hk-guess-c" class="clip" data-start="4.1" data-duration="4.6"><div id="hk-guess"><div id="hk-guess-km">??? km</div><div id="hk-guess-sub">Schätz mal! &#8595;</div></div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#hk-jeans-wrap", { y: 40, rotation: -2 }, { y: 0, rotation: 2, duration: 4.6, ease: "sine.inOut" }, 0);
-    tl.fromTo("#hk-title", { scale: 1 }, { scale: 1.04, duration: 4.5, ease: "none" }, 0);
-    tl.to("#hk-jeans-wrap", { scale: 0.82, y: 160, duration: 0.5, ease: "power3.out" }, 4.6);
-    tl.fromTo("#hk-guess", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 4.6);
+    tl.fromTo("#hk-jeans-wrap", { y: 40, rotation: -2 }, { y: 0, rotation: 2, duration: 4.1, ease: "sine.inOut" }, 0);
+    tl.fromTo("#hk-title", { scale: 1 }, { scale: 1.04, duration: 4.0, ease: "none" }, 0);
+    tl.to("#hk-jeans-wrap", { scale: 0.82, y: 160, duration: 0.5, ease: "power3.out" }, 4.1);
+    tl.fromTo("#hk-guess", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 4.1);
     const seq = ["???", "5.1??", "1?.???", "2?.0??", "4?.???", "???"];
     const km = document.querySelector("#hk-guess-km");
     const st = { i: 0 };
-    tl.fromTo(st, { i: 0 }, { i: seq.length - 1, duration: 2.2, ease: "none", onUpdate: () => { km.textContent = seq[Math.round(st.i)] + " km"; } }, 5.4);
-    tl.fromTo("#hk-guess-sub", { y: 0 }, { y: 14, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 7 }, 5.0);
-    tl.to("#hk-guess", { opacity: 0, duration: 0.2 }, 9.25);
+    tl.fromTo(st, { i: 0 }, { i: seq.length - 1, duration: 2.2, ease: "none", onUpdate: () => { km.textContent = seq[Math.round(st.i)] + " km"; } }, 4.9);
+    tl.fromTo("#hk-guess-sub", { y: 0 }, { y: 14, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 7 }, 4.5);
+    tl.to("#hk-guess", { opacity: 0, duration: 0.2 }, 8.45);
     window.__timelines["hook"] = tl;
   </script>
 </template>
