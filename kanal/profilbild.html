@@ -1,0 +1,54 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  body { margin: 0; background: #0b1c25; }
+  .tile { width: 1080px; height: 1080px; position: relative; overflow: hidden; }
+  svg { position: absolute; inset: 0; }
+</style></head><body>
+<div class="tile" id="a">
+<svg viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%"><stop offset="0" stop-color="#175066"/><stop offset="1" stop-color="#0b1c25"/></radialGradient>
+    <clipPath id="globe"><circle cx="540" cy="560" r="300"/></clipPath>
+    <path id="ring" d="M540 140 a420 420 0 1 1 -0.1 0"/>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <circle cx="540" cy="540" r="470" fill="none" stroke="#ffd23f" stroke-width="22"/>
+  <circle cx="540" cy="540" r="372" fill="none" stroke="#ffd23f" stroke-width="10" stroke-dasharray="2 22" stroke-linecap="round"/>
+
+  <circle cx="540" cy="560" r="300" fill="#2f86b3"/>
+  <g clip-path="url(#globe)">
+    <path d="M300 420 C380 360 470 390 450 470 C430 540 350 520 320 600 C300 650 230 560 250 500 Z" fill="#e9dcc0"/>
+    <path d="M560 380 C650 360 760 430 740 520 C720 580 640 560 610 610 C580 660 630 740 570 790 C520 720 560 650 540 590 C520 520 520 420 560 380 Z" fill="#e9dcc0"/>
+    <path d="M760 640 C820 620 860 680 830 730 C800 760 750 720 760 640 Z" fill="#e9dcc0"/>
+    <g fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="4">
+      <ellipse cx="540" cy="560" rx="300" ry="110"/><ellipse cx="540" cy="560" rx="120" ry="300"/><line x1="240" y1="560" x2="840" y2="560"/>
+    </g>
+  </g>
+  <path d="M330 690 Q 470 330 760 470" fill="none" stroke="#ff5a3a" stroke-width="20" stroke-linecap="round" stroke-dasharray="2 40"/>
+  <circle cx="330" cy="690" r="26" fill="#ff5a3a" stroke="#fff" stroke-width="10"/>
+  <g transform="translate(770 470) rotate(25) scale(1.6)">
+    <path d="M-40 -6 L10 -6 L-12 -46 L4 -46 L34 -6 L52 -6 C64 -6 64 6 52 6 L34 6 L4 46 L-12 46 L10 6 L-40 6 L-52 22 L-62 22 L-54 0 L-62 -22 L-52 -22 Z" fill="#fff"/>
+  </g>
+</svg>
+</div>
+<div class="tile" id="b">
+<svg viewBox="0 0 1080 1080" width="1080" height="1080">
+  <rect width="1080" height="1080" fill="#ffd23f"/>
+  <g transform="translate(520 560) rotate(-8) scale(0.82)">
+    <rect x="-330" y="-410" width="660" height="820" rx="56" fill="#7a1f2b"/>
+    <rect x="-286" y="-366" width="572" height="732" rx="34" fill="none" stroke="#f3d48a" stroke-width="10"/>
+    <circle cx="0" cy="-60" r="170" fill="none" stroke="#f3d48a" stroke-width="16"/>
+    <ellipse cx="0" cy="-60" rx="170" ry="62" fill="none" stroke="#f3d48a" stroke-width="10"/>
+    <ellipse cx="0" cy="-60" rx="62" ry="170" fill="none" stroke="#f3d48a" stroke-width="10"/>
+    <text x="0" y="220" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" fill="#f3d48a" letter-spacing="6">REISE</text>
+    <text x="0" y="300" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="56" fill="#f3d48a" letter-spacing="10">VON …</text>
+  </g>
+  <g transform="translate(740 330) rotate(16) scale(0.9)">
+    <circle r="150" fill="none" stroke="#ff5a3a" stroke-width="18"/>
+    <circle r="118" fill="none" stroke="#ff5a3a" stroke-width="6"/>
+    <text y="-18" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="58" fill="#ff5a3a">KM</text>
+    <text y="52" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="58" fill="#ff5a3a">???</text>
+  </g>
+</svg>
+</div>
+</body></html>
