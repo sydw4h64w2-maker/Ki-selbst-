@@ -1,0 +1,44 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Inter", sans-serif; background: radial-gradient(circle at 50% 35%, #1d3f70 0%, #0b1530 70%); color: #fff; }
+    #pay-top { position: absolute; left: 0; top: 300px; width: 1080px; text-align: center; }
+    #pay-big { font-weight: 900; font-size: 170px; line-height: 1; color: #ffd23f; font-variant-numeric: tabular-nums; }
+    #pay-lbl { font-weight: 700; font-size: 48px; margin-top: 6px; }
+    #pay-l { position: absolute; left: 0; top: 590px; width: 1080px; text-align: center; }
+    #pay-l b { font-weight: 900; font-size: 96px; }
+    .pay-flags { display: flex; justify-content: center; gap: 14px; margin-top: 20px; }
+    .pay-flag { border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,0.35); }
+    #pay-bars-c { position: absolute; inset: 0; }
+    #pay-bars { position: absolute; left: 90px; top: 830px; width: 900px; }
+    .pay-bar { margin-bottom: 30px; }
+    .pay-bar b { display: block; font-weight: 900; font-size: 44px; margin-bottom: 10px; }
+    .pay-track { height: 64px; border-radius: 16px; background: rgba(255,255,255,0.12); overflow: hidden; }
+    .pay-fill { height: 100%; border-radius: 16px; transform-origin: 0 50%; }
+    #pay-fill-j { width: 100%; background: linear-gradient(90deg, #3e6db3, #6fa0e8); }
+    #pay-fill-e { width: 80%; background: linear-gradient(90deg, #2f9e6b, #6fd6a0); }
+  </style>
+  <div id="root" data-composition-id="payoff" data-width="1080" data-height="1920">
+    <div id="pay-top"><div id="pay-big"><span id="pay-km">0</span> km</div><div id="pay-lbl">in Luftlinie</div></div>
+    <div id="pay-l"><b>7 Länder</b><div class="pay-flags"><svg class="pay-flag" viewBox="0 0 120 80" width="96" height="64"><rect width="120" height="80" fill="#fff"/><rect width="120" height="27" fill="#ff9933"/><rect y="53" width="120" height="27" fill="#138808"/><circle cx="60" cy="40" r="10" fill="none" stroke="#000080" stroke-width="3"/></svg><svg class="pay-flag" viewBox="0 0 120 80" width="96" height="64"><rect width="120" height="80" fill="#de2910"/><path d="M24 14 L28 26 L16 19 L32 19 L20 26 Z" fill="#ffde00"/></svg><svg class="pay-flag" viewBox="0 0 120 80" width="96" height="64"><rect width="120" height="80" fill="#fe0000"/><rect width="60" height="40" fill="#000095"/><circle cx="30" cy="20" r="9" fill="#fff"/></svg><svg class="pay-flag" viewBox="0 0 120 80" width="96" height="64"><rect width="120" height="40" fill="#fff"/><rect y="40" width="120" height="40" fill="#dc143c"/></svg><svg class="pay-flag" viewBox="0 0 120 80" width="96" height="64"><rect width="120" height="40" fill="#0038a8"/><rect y="40" width="120" height="40" fill="#ce1126"/><path d="M0 0 L60 40 L0 80 Z" fill="#fff"/><circle cx="18" cy="40" r="7" fill="#fcd116"/></svg><svg class="pay-flag" viewBox="0 0 120 80" width="96" height="64"><rect y="0.00" width="120" height="8.89" fill="#0d5eaf"/><rect y="8.89" width="120" height="8.89" fill="#fff"/><rect y="17.78" width="120" height="8.89" fill="#0d5eaf"/><rect y="26.67" width="120" height="8.89" fill="#fff"/><rect y="35.56" width="120" height="8.89" fill="#0d5eaf"/><rect y="44.44" width="120" height="8.89" fill="#fff"/><rect y="53.33" width="120" height="8.89" fill="#0d5eaf"/><rect y="62.22" width="120" height="8.89" fill="#fff"/><rect y="71.11" width="120" height="8.89" fill="#0d5eaf"/><rect width="44" height="44.4" fill="#0d5eaf"/><rect x="17.6" width="8.8" height="44.4" fill="#fff"/><rect y="17.8" width="44" height="8.8" fill="#fff"/></svg><svg class="pay-flag" viewBox="0 0 120 80" width="96" height="64"><rect width="120" height="27" fill="#111"/><rect y="27" width="120" height="26" fill="#dd0000"/><rect y="53" width="120" height="27" fill="#ffce00"/></svg></div></div>
+    <div id="pay-bars-c" class="clip" data-start="5.5" data-duration="8.5">
+      <div id="pay-bars">
+        <div class="pay-bar" id="pay-bar-j"><b>Jeans, echte Wege: bis 50.000 km</b><div class="pay-track"><div class="pay-fill" id="pay-fill-j"></div></div></div>
+        <div class="pay-bar" id="pay-bar-e"><b>Einmal um die Erde: 40.000 km</b><div class="pay-track"><div class="pay-fill" id="pay-fill-e"></div></div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const kmEl = document.querySelector("#pay-km");
+    const k = { v: 0 };
+    tl.fromTo("#pay-top", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 0.1);
+    tl.fromTo(k, { v: 0 }, { v: 35205, duration: 1.5, ease: "power2.out", onUpdate: () => (kmEl.textContent = Math.round(k.v).toLocaleString("de-DE")) }, 0.1);
+    tl.fromTo("#pay-l b", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 4.0);
+    tl.fromTo(".pay-flag", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.22, ease: "back.out(2.4)", stagger: 0.1 }, 4.15);
+    tl.fromTo("#pay-bar-j", { opacity: 0 }, { opacity: 1, duration: 0.25 }, 5.5);
+    tl.fromTo("#pay-fill-j", { scaleX: 0 }, { scaleX: 1, duration: 1.4, ease: "power2.out" }, 5.7);
+    tl.fromTo("#pay-bar-e", { opacity: 0 }, { opacity: 1, duration: 0.25 }, 11.0);
+    tl.fromTo("#pay-fill-e", { scaleX: 0 }, { scaleX: 1, duration: 1.2, ease: "power2.out" }, 11.15);
+    window.__timelines["payoff"] = tl;
+  </script>
+</template>

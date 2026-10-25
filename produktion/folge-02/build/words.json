@@ -1,0 +1,847 @@
+[
+{
+"text": "Deine",
+"start": 0.2,
+"end": 0.557
+},
+{
+"text": "Jeans",
+"start": 0.62,
+"end": 0.976
+},
+{
+"text": "ist",
+"start": 1.039,
+"end": 1.306
+},
+{
+"text": "weiter",
+"start": 1.354,
+"end": 1.755
+},
+{
+"text": "gereist",
+"start": 1.826,
+"end": 2.271
+},
+{
+"text": "als",
+"start": 2.35,
+"end": 2.617
+},
+{
+"text": "du.",
+"start": 2.665,
+"end": 3.2
+},
+{
+"text": "Viel",
+"start": 3.294,
+"end": 3.606
+},
+{
+"text": "weiter.",
+"start": 3.661,
+"end": 4.374
+},
+{
+"text": "Schätz",
+"start": 4.6,
+"end": 4.946
+},
+{
+"text": "mal:",
+"start": 5.008,
+"end": 5.508
+},
+{
+"text": "Wie",
+"start": 5.596,
+"end": 5.827
+},
+{
+"text": "viele",
+"start": 5.868,
+"end": 6.176
+},
+{
+"text": "Kilometer?",
+"start": 6.23,
+"end": 6.962
+},
+{
+"text": "Schreib's",
+"start": 7.091,
+"end": 7.552
+},
+{
+"text": "jetzt",
+"start": 7.634,
+"end": 7.942
+},
+{
+"text": "in",
+"start": 7.996,
+"end": 8.189
+},
+{
+"text": "die",
+"start": 8.223,
+"end": 8.454
+},
+{
+"text": "Kommentare.",
+"start": 8.494,
+"end": 9.264
+},
+{
+"text": "Das",
+"start": 9.5,
+"end": 9.735
+},
+{
+"text": "hier",
+"start": 9.776,
+"end": 10.05
+},
+{
+"text": "ist",
+"start": 10.098,
+"end": 10.333
+},
+{
+"text": "eine",
+"start": 10.374,
+"end": 10.648
+},
+{
+"text": "typische",
+"start": 10.696,
+"end": 11.126
+},
+{
+"text": "Route.",
+"start": 11.202,
+"end": 11.788
+},
+{
+"text": "Jeder",
+"start": 11.892,
+"end": 12.205
+},
+{
+"text": "Hersteller",
+"start": 12.26,
+"end": 12.768
+},
+{
+"text": "macht",
+"start": 12.858,
+"end": 13.171
+},
+{
+"text": "es",
+"start": 13.226,
+"end": 13.421
+},
+{
+"text": "anders.",
+"start": 13.456,
+"end": 14.082
+},
+{
+"text": "Aber",
+"start": 14.192,
+"end": 14.466
+},
+{
+"text": "so",
+"start": 14.514,
+"end": 14.709
+},
+{
+"text": "ähnlich",
+"start": 14.744,
+"end": 15.135
+},
+{
+"text": "läuft",
+"start": 15.204,
+"end": 15.517
+},
+{
+"text": "es",
+"start": 15.572,
+"end": 15.767
+},
+{
+"text": "oft.",
+"start": 15.802,
+"end": 16.31
+},
+{
+"text": "Station",
+"start": 16.5,
+"end": 16.89
+},
+{
+"text": "eins.",
+"start": 16.959,
+"end": 17.506
+},
+{
+"text": "Indien.",
+"start": 17.602,
+"end": 18.227
+},
+{
+"text": "Hier",
+"start": 18.337,
+"end": 18.61
+},
+{
+"text": "wächst",
+"start": 18.659,
+"end": 19.01
+},
+{
+"text": "die",
+"start": 19.072,
+"end": 19.306
+},
+{
+"text": "Baumwolle.",
+"start": 19.348,
+"end": 20.089
+},
+{
+"text": "Für",
+"start": 20.22,
+"end": 20.455
+},
+{
+"text": "eine",
+"start": 20.496,
+"end": 20.769
+},
+{
+"text": "einzige",
+"start": 20.817,
+"end": 21.208
+},
+{
+"text": "Jeans",
+"start": 21.277,
+"end": 21.589
+},
+{
+"text": "braucht",
+"start": 21.644,
+"end": 22.035
+},
+{
+"text": "man",
+"start": 22.103,
+"end": 22.338
+},
+{
+"text": "mehrere",
+"start": 22.379,
+"end": 22.769
+},
+{
+"text": "tausend",
+"start": 22.838,
+"end": 23.229
+},
+{
+"text": "Liter",
+"start": 23.298,
+"end": 23.61
+},
+{
+"text": "Wasser.",
+"start": 23.665,
+"end": 24.29
+},
+{
+"text": "Station",
+"start": 24.5,
+"end": 24.845
+},
+{
+"text": "zwei.",
+"start": 24.906,
+"end": 25.39
+},
+{
+"text": "China.",
+"start": 25.475,
+"end": 25.993
+},
+{
+"text": "Aus",
+"start": 26.084,
+"end": 26.292
+},
+{
+"text": "der",
+"start": 26.328,
+"end": 26.535
+},
+{
+"text": "Baumwolle",
+"start": 26.572,
+"end": 26.986
+},
+{
+"text": "wird",
+"start": 27.059,
+"end": 27.301
+},
+{
+"text": "Garn",
+"start": 27.344,
+"end": 27.585
+},
+{
+"text": "gesponnen.",
+"start": 27.628,
+"end": 28.284
+},
+{
+"text": "Station",
+"start": 28.5,
+"end": 28.893
+},
+{
+"text": "drei.",
+"start": 28.962,
+"end": 29.512
+},
+{
+"text": "Taiwan.",
+"start": 29.609,
+"end": 30.238
+},
+{
+"text": "Das",
+"start": 30.349,
+"end": 30.585
+},
+{
+"text": "Garn",
+"start": 30.626,
+"end": 30.901
+},
+{
+"text": "wird",
+"start": 30.95,
+"end": 31.225
+},
+{
+"text": "blau",
+"start": 31.274,
+"end": 31.549
+},
+{
+"text": "gefärbt.",
+"start": 31.597,
+"end": 32.265
+},
+{
+"text": "Mit",
+"start": 32.383,
+"end": 32.619
+},
+{
+"text": "Indigo.",
+"start": 32.66,
+"end": 33.289
+},
+{
+"text": "Station",
+"start": 33.5,
+"end": 33.898
+},
+{
+"text": "vier.",
+"start": 33.968,
+"end": 34.525
+},
+{
+"text": "Polen.",
+"start": 34.623,
+"end": 35.22
+},
+{
+"text": "Aus",
+"start": 35.326,
+"end": 35.564
+},
+{
+"text": "dem",
+"start": 35.606,
+"end": 35.845
+},
+{
+"text": "Garn",
+"start": 35.887,
+"end": 36.166
+},
+{
+"text": "wird",
+"start": 36.215,
+"end": 36.493
+},
+{
+"text": "Jeansstoff",
+"start": 36.543,
+"end": 37.06
+},
+{
+"text": "gewebt.",
+"start": 37.151,
+"end": 37.788
+},
+{
+"text": "Station",
+"start": 38.0,
+"end": 38.349
+},
+{
+"text": "fünf.",
+"start": 38.411,
+"end": 38.899
+},
+{
+"text": "Die",
+"start": 38.985,
+"end": 39.195
+},
+{
+"text": "Philippinen.",
+"start": 39.232,
+"end": 39.964
+},
+{
+"text": "Hier",
+"start": 40.094,
+"end": 40.338
+},
+{
+"text": "wird",
+"start": 40.381,
+"end": 40.625
+},
+{
+"text": "die",
+"start": 40.668,
+"end": 40.878
+},
+{
+"text": "Jeans",
+"start": 40.915,
+"end": 41.194
+},
+{
+"text": "genäht.",
+"start": 41.243,
+"end": 41.801
+},
+{
+"text": "Station",
+"start": 42.0,
+"end": 42.394
+},
+{
+"text": "sechs.",
+"start": 42.464,
+"end": 43.055
+},
+{
+"text": "Griechenland.",
+"start": 43.159,
+"end": 44.027
+},
+{
+"text": "Sie",
+"start": 44.18,
+"end": 44.416
+},
+{
+"text": "wird",
+"start": 44.458,
+"end": 44.734
+},
+{
+"text": "mit",
+"start": 44.783,
+"end": 45.019
+},
+{
+"text": "Steinen",
+"start": 45.061,
+"end": 45.455
+},
+{
+"text": "gewaschen.",
+"start": 45.525,
+"end": 46.274
+},
+{
+"text": "Damit",
+"start": 46.406,
+"end": 46.721
+},
+{
+"text": "sie",
+"start": 46.777,
+"end": 47.013
+},
+{
+"text": "getragen",
+"start": 47.055,
+"end": 47.489
+},
+{
+"text": "aussieht.",
+"start": 47.565,
+"end": 48.275
+},
+{
+"text": "Station",
+"start": 48.5,
+"end": 48.875
+},
+{
+"text": "sieben.",
+"start": 48.942,
+"end": 49.542
+},
+{
+"text": "Deutschland.",
+"start": 49.648,
+"end": 50.436
+},
+{
+"text": "Endlich",
+"start": 50.575,
+"end": 50.951
+},
+{
+"text": "im",
+"start": 51.017,
+"end": 51.205
+},
+{
+"text": "Laden.",
+"start": 51.238,
+"end": 51.801
+},
+{
+"text": "Allein",
+"start": 52.0,
+"end": 52.362
+},
+{
+"text": "in",
+"start": 52.426,
+"end": 52.628
+},
+{
+"text": "Luftlinie",
+"start": 52.663,
+"end": 53.146
+},
+{
+"text": "sind",
+"start": 53.232,
+"end": 53.513
+},
+{
+"text": "das",
+"start": 53.563,
+"end": 53.805
+},
+{
+"text": "über",
+"start": 53.847,
+"end": 54.129
+},
+{
+"text": "fünfunddreißigtausend",
+"start": 54.179,
+"end": 55.145
+},
+{
+"text": "Kilometer.",
+"start": 55.316,
+"end": 56.081
+},
+{
+"text": "Sieben",
+"start": 56.216,
+"end": 56.578
+},
+{
+"text": "Länder.",
+"start": 56.642,
+"end": 57.286
+},
+{
+"text": "Auf",
+"start": 57.5,
+"end": 57.693
+},
+{
+"text": "echten",
+"start": 57.727,
+"end": 58.015
+},
+{
+"text": "Transportwegen",
+"start": 58.066,
+"end": 58.612
+},
+{
+"text": "ist",
+"start": 58.708,
+"end": 58.901
+},
+{
+"text": "es",
+"start": 58.935,
+"end": 59.095
+},
+{
+"text": "oft",
+"start": 59.124,
+"end": 59.316
+},
+{
+"text": "noch",
+"start": 59.35,
+"end": 59.575
+},
+{
+"text": "mehr.",
+"start": 59.615,
+"end": 60.064
+},
+{
+"text": "Manche",
+"start": 60.143,
+"end": 60.432
+},
+{
+"text": "Schätzungen",
+"start": 60.483,
+"end": 60.933
+},
+{
+"text": "gehen",
+"start": 61.012,
+"end": 61.269
+},
+{
+"text": "bis",
+"start": 61.314,
+"end": 61.507
+},
+{
+"text": "fünfzigtausend",
+"start": 61.541,
+"end": 62.086
+},
+{
+"text": "Kilometer.",
+"start": 62.183,
+"end": 62.792
+},
+{
+"text": "Einmal",
+"start": 63.0,
+"end": 63.336
+},
+{
+"text": "um",
+"start": 63.395,
+"end": 63.582
+},
+{
+"text": "die",
+"start": 63.615,
+"end": 63.839
+},
+{
+"text": "ganze",
+"start": 63.879,
+"end": 64.178
+},
+{
+"text": "Erde",
+"start": 64.23,
+"end": 64.492
+},
+{
+"text": "sind",
+"start": 64.538,
+"end": 64.799
+},
+{
+"text": "vierzigtausend.",
+"start": 64.845,
+"end": 65.742
+},
+{
+"text": "Deine",
+"start": 66.0,
+"end": 66.28
+},
+{
+"text": "Jeans",
+"start": 66.329,
+"end": 66.609
+},
+{
+"text": "war",
+"start": 66.659,
+"end": 66.869
+},
+{
+"text": "also",
+"start": 66.906,
+"end": 67.151
+},
+{
+"text": "schon",
+"start": 67.194,
+"end": 67.474
+},
+{
+"text": "einmal",
+"start": 67.524,
+"end": 67.839
+},
+{
+"text": "um",
+"start": 67.894,
+"end": 68.069
+},
+{
+"text": "die",
+"start": 68.1,
+"end": 68.31
+},
+{
+"text": "Welt.",
+"start": 68.347,
+"end": 68.837
+},
+{
+"text": "Und",
+"start": 68.924,
+"end": 69.134
+},
+{
+"text": "du",
+"start": 69.171,
+"end": 69.346
+},
+{
+"text": "trägst",
+"start": 69.376,
+"end": 69.691
+},
+{
+"text": "sie",
+"start": 69.747,
+"end": 69.957
+},
+{
+"text": "zum",
+"start": 69.994,
+"end": 70.204
+},
+{
+"text": "Bäcker.",
+"start": 70.241,
+"end": 70.801
+},
+{
+"text": "Morgen:",
+"start": 71.0,
+"end": 71.574
+},
+{
+"text": "Etwas",
+"start": 71.675,
+"end": 71.962
+},
+{
+"text": "Gelbes,",
+"start": 72.013,
+"end": 72.372
+},
+{
+"text": "das",
+"start": 72.435,
+"end": 72.65
+},
+{
+"text": "grün",
+"start": 72.688,
+"end": 72.939
+},
+{
+"text": "gepflückt",
+"start": 72.984,
+"end": 73.414
+},
+{
+"text": "wird.",
+"start": 73.49,
+"end": 73.993
+},
+{
+"text": "Was",
+"start": 74.081,
+"end": 74.296
+},
+{
+"text": "soll",
+"start": 74.334,
+"end": 74.586
+},
+{
+"text": "danach",
+"start": 74.63,
+"end": 74.953
+},
+{
+"text": "reisen?",
+"start": 75.01,
+"end": 75.584
+},
+{
+"text": "Schreib's",
+"start": 75.685,
+"end": 76.116
+},
+{
+"text": "in",
+"start": 76.192,
+"end": 76.371
+},
+{
+"text": "die",
+"start": 76.403,
+"end": 76.618
+},
+{
+"text": "Kommentare.",
+"start": 76.656,
+"end": 77.373
+}
+]

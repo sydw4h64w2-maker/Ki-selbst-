@@ -1,0 +1,44 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; font-family: "Inter", sans-serif; pointer-events: none; }
+    .hud-st { position: absolute; inset: 0; }
+    .hud-badge { position: absolute; left: 60px; top: 190px; padding: 12px 22px; border-radius: 18px; background: rgba(11,28,37,0.9); color: #fff; display: flex; flex-direction: column; gap: 2px; }
+    .hud-badge b { font-weight: 900; font-size: 32px; color: #ffd23f; letter-spacing: 0.08em; }
+    .hud-badge span { font-weight: 700; font-size: 32px; }
+    #hud-pass { position: absolute; left: 600px; top: 190px; width: 420px; padding: 12px 16px 16px; border-radius: 18px; background: #7a1f2b; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+    #hud-pass-t { color: #f3d48a; font-weight: 900; font-size: 28px; letter-spacing: 0.1em; margin-bottom: 10px; }
+    #hud-slots { display: flex; flex-wrap: wrap; gap: 10px; }
+    .hud-slot { width: 86px; height: 52px; border-radius: 12px; background: #f6ecd6; display: flex; align-items: center; justify-content: center; }
+    .hud-stamp { width: 80px; height: 46px; border-radius: 10px; border: 4px solid #2c4f86; color: #2c4f86; background: #fffaf0; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 28px; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="hud" data-width="1080" data-height="1920">
+    <div id="hud-st1" class="clip hud-st" data-start="0.0" data-duration="8.0"><div class="hud-badge"><b>STATION 1/7</b><span>Indien</span></div></div>
+    <div id="hud-st2" class="clip hud-st" data-start="8.0" data-duration="4.0"><div class="hud-badge"><b>STATION 2/7</b><span>China</span></div></div>
+    <div id="hud-st3" class="clip hud-st" data-start="12.0" data-duration="5.0"><div class="hud-badge"><b>STATION 3/7</b><span>Taiwan</span></div></div>
+    <div id="hud-st4" class="clip hud-st" data-start="17.0" data-duration="4.5"><div class="hud-badge"><b>STATION 4/7</b><span>Polen</span></div></div>
+    <div id="hud-st5" class="clip hud-st" data-start="21.5" data-duration="4.0"><div class="hud-badge"><b>STATION 5/7</b><span>Philippinen</span></div></div>
+    <div id="hud-st6" class="clip hud-st" data-start="25.5" data-duration="6.5"><div class="hud-badge"><b>STATION 6/7</b><span>Griechenland</span></div></div>
+    <div id="hud-st7" class="clip hud-st" data-start="32.0" data-duration="3.5"><div class="hud-badge"><b>STATION 7/7</b><span>Deutschland</span></div></div>
+    <div id="hud-pass"><div id="hud-pass-t">REISEPASS &middot; JEANS</div><div id="hud-slots"><div class="hud-slot"><div id="hud-stamp-in" class="hud-stamp">IN</div></div><div class="hud-slot"><div id="hud-stamp-cn" class="hud-stamp">CN</div></div><div class="hud-slot"><div id="hud-stamp-tw" class="hud-stamp">TW</div></div><div class="hud-slot"><div id="hud-stamp-pl" class="hud-stamp">PL</div></div><div class="hud-slot"><div id="hud-stamp-ph" class="hud-stamp">PH</div></div><div class="hud-slot"><div id="hud-stamp-gr" class="hud-stamp">GR</div></div><div class="hud-slot"><div id="hud-stamp-de" class="hud-stamp">DE</div></div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hud-pass", { y: -60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }, 0);
+    tl.fromTo("#hud-st1 .hud-badge", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 0.0);
+    tl.fromTo("#hud-stamp-in", { opacity: 0, scale: 2.2, rotation: -25 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.16, ease: "power4.in" }, 0.3);
+    tl.fromTo("#hud-st2 .hud-badge", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 8.0);
+    tl.fromTo("#hud-stamp-cn", { opacity: 0, scale: 2.2, rotation: -25 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.16, ease: "power4.in" }, 9.3);
+    tl.fromTo("#hud-st3 .hud-badge", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 12.0);
+    tl.fromTo("#hud-stamp-tw", { opacity: 0, scale: 2.2, rotation: -25 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.16, ease: "power4.in" }, 13.3);
+    tl.fromTo("#hud-st4 .hud-badge", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 17.0);
+    tl.fromTo("#hud-stamp-pl", { opacity: 0, scale: 2.2, rotation: -25 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.16, ease: "power4.in" }, 18.3);
+    tl.fromTo("#hud-st5 .hud-badge", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 21.5);
+    tl.fromTo("#hud-stamp-ph", { opacity: 0, scale: 2.2, rotation: -25 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.16, ease: "power4.in" }, 22.8);
+    tl.fromTo("#hud-st6 .hud-badge", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 25.5);
+    tl.fromTo("#hud-stamp-gr", { opacity: 0, scale: 2.2, rotation: -25 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.16, ease: "power4.in" }, 26.8);
+    tl.fromTo("#hud-st7 .hud-badge", { x: -40, opacity: 0 }, { x: 0, opacity: 1, duration: 0.25, ease: "power3.out" }, 32.0);
+    tl.fromTo("#hud-stamp-de", { opacity: 0, scale: 2.2, rotation: -25 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.16, ease: "power4.in" }, 33.3);
+    tl.to("#hud-pass", { opacity: 0, duration: 0.3 }, 35.1);
+    window.__timelines["hud"] = tl;
+  </script>
+</template>
