@@ -1,6 +1,6 @@
 # Folge 1: Die Reise der Nordseekrabbe
 
-**Länge:** ca. 75 Sekunden · **Sprechertext:** ca. 180 Wörter · **Bilder:** 12
+**Länge:** ca. 75 Sekunden · **Sprechertext:** ca. 180 Wörter · **Bilder:** 9 + 2 Karten
 
 ## Geprüfte Fakten
 
