@@ -97,7 +97,7 @@
     }
   </style>
   <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
-    <div id="out-beach-c" class="clip" data-start="0" data-duration="5">
+    <div id="out-beach-c" class="clip" data-start="0" data-duration="5.6">
       <div id="out-beach"></div>
       <div id="out-sun"></div>
       <div id="out-sand-wrap">
@@ -130,7 +130,7 @@
       </div>
       <div id="out-line"><div id="out-line1">Schon im Urlaub.</div><div id="out-line2">Weiter als du.</div></div>
     </div>
-    <div id="out-tease-c" class="clip" data-start="5" data-duration="8">
+    <div id="out-tease-c" class="clip" data-start="5.6" data-duration="7.9">
       <div id="out-tease"></div>
       <div id="out-morgen">MORGEN</div>
       <div id="out-brand">DIE REISE VON &hellip; &middot; FOLGE 2</div>
@@ -139,21 +139,21 @@
         <path d="M60 70 L340 70" stroke="#4fa3c7" stroke-width="3" opacity="0.6" />
       </svg>
     </div>
-    <div id="out-ask-c" class="clip" data-start="8.4" data-duration="4.6">
+    <div id="out-ask-c" class="clip" data-start="9.2" data-duration="4.3">
       <div id="out-ask">Was soll als Nächstes reisen?<br />Schreib's in die Kommentare!</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#out-sand-wrap", { y: 40, rotation: -3 }, { y: 0, rotation: 3, duration: 5, ease: "sine.inOut" }, 0);
+    tl.fromTo("#out-sand-wrap", { y: 40, rotation: -3 }, { y: 0, rotation: 3, duration: 5.6, ease: "sine.inOut" }, 0);
     tl.fromTo("#out-glasses", { y: -300, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "bounce.out" }, 0.8);
-    tl.fromTo("#out-line1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.4);
-    tl.fromTo("#out-line2", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 3.3);
-    tl.fromTo("#out-jeans", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.8, ease: "power2.out" }, 5.1);
-    tl.fromTo("#out-jeans", { filter: "drop-shadow(0 0 0px #4fa3c7)" }, { filter: "drop-shadow(0 0 40px #4fa3c7)", duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }, 5.9);
-    tl.fromTo("#out-morgen", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }, 5.1);
-    tl.fromTo("#out-brand", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 5.6);
-    tl.fromTo("#out-ask", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 8.4);
+    tl.fromTo("#out-line1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.2);
+    tl.fromTo("#out-line2", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 3.8);
+    tl.fromTo("#out-jeans", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.8, ease: "power2.out" }, 5.7);
+    tl.fromTo("#out-jeans", { filter: "drop-shadow(0 0 0px #4fa3c7)" }, { filter: "drop-shadow(0 0 40px #4fa3c7)", duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }, 6.5);
+    tl.fromTo("#out-morgen", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }, 5.7);
+    tl.fromTo("#out-brand", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 6.2);
+    tl.fromTo("#out-ask", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 9.2);
     window.__timelines["outro"] = tl;
   </script>
 </template>

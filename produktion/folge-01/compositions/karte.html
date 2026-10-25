@@ -167,28 +167,37 @@
     const tl = gsap.timeline({ paused: true });
     const fmt = (v) => Math.round(v).toLocaleString("de-DE");
     const kmEl = document.querySelector("#kar-km-n");
-    const km = { v: 0 };
-    tl.fromTo("#kar-world", { scale: 1.12, transformOrigin: "50% 35%" }, { scale: 1.0, duration: 8, ease: "power1.out" }, 0);
-    tl.fromTo("#kar-pulse", { scale: 1, opacity: 0.5, transformOrigin: "50% 50%" }, { scale: 2.2, opacity: 0, duration: 0.9, ease: "power1.out", repeat: 7 }, 0);
-    // Hinweg: Büsum nach Tanger
-    tl.fromTo("#kar-route-s", { attr: { "stroke-dashoffset": 100 } }, { attr: { "stroke-dashoffset": 0 }, duration: 7, ease: "none" }, 0.5);
-    tl.fromTo("#kar-truck", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 0.4);
-    tl.fromTo("#kar-truck", { motionPath: { path: "#kar-route-s", align: "#kar-route-s", alignOrigin: [0.5, 0.5], start: 0, end: 0 } },
-      { motionPath: { path: "#kar-route-s", align: "#kar-route-s", alignOrigin: [0.5, 0.5], start: 0, end: 1 }, duration: 7, ease: "none" }, 0.5);
-    tl.fromTo(km, { v: 0 }, { v: 3000, duration: 7, ease: "none", onUpdate: () => (kmEl.textContent = fmt(km.v)) }, 0.5);
-    tl.fromTo("#map-fr", { fill: "#e9dcc0" }, { fill: "#f3b33d", duration: 0.3 }, 2.2);
-    tl.fromTo("#kar-l-fr", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 2.2);
-    tl.fromTo("#map-es", { fill: "#e9dcc0" }, { fill: "#f3b33d", duration: 0.3 }, 4.8);
-    tl.fromTo("#kar-l-es", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 4.8);
-    tl.fromTo("#map-ma", { fill: "#e9dcc0" }, { fill: "#f3b33d", duration: 0.3 }, 7.3);
-    tl.fromTo("#kar-l-ma", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 7.3);
-    tl.fromTo("#kar-km", { scale: 1 }, { scale: 1.15, duration: 0.15, yoyo: true, repeat: 1, transformOrigin: "0% 50%" }, 7.5);
-    // Rückweg: Tanger nach Büsum
-    tl.fromTo("#kar-route-n", { attr: { "stroke-dashoffset": -100 } }, { attr: { "stroke-dashoffset": 0 }, duration: 7, ease: "none" }, 17.5);
-    tl.fromTo("#kar-truck", { motionPath: { path: "#kar-route-s", align: "#kar-route-s", alignOrigin: [0.5, 0.5], start: 1, end: 1 } },
-      { motionPath: { path: "#kar-route-s", align: "#kar-route-s", alignOrigin: [0.5, 0.5], start: 1, end: 0 }, duration: 7, ease: "none", immediateRender: false }, 17.5);
-    tl.fromTo(km, { v: 3000 }, { v: 6000, duration: 7, ease: "none", immediateRender: false, onUpdate: () => (kmEl.textContent = fmt(km.v)) }, 17.5);
-    tl.fromTo("#kar-km", { scale: 1 }, { scale: 1.15, duration: 0.15, yoyo: true, repeat: 1, transformOrigin: "0% 50%", immediateRender: false }, 24.5);
+    const routeS = document.querySelector("#kar-route-s");
+    const routeN = document.querySelector("#kar-route-n");
+    // Lkw-Fahrt als eigener, angehaltener Tween: der Fortschritt kommt aus der Szenen-Zeit
+    const drive = gsap.fromTo("#kar-truck",
+      { motionPath: { path: "#kar-route-s", align: "#kar-route-s", alignOrigin: [0.5, 0.5], start: 0, end: 0 } },
+      { motionPath: { path: "#kar-route-s", align: "#kar-route-s", alignOrigin: [0.5, 0.5], start: 0, end: 1 }, duration: 1, ease: "none", paused: true });
+    const trip = { p: 0, back: 0 };
+    const draw = () => {
+      routeS.setAttribute("stroke-dashoffset", 100 - trip.p * 100);
+      routeN.setAttribute("stroke-dashoffset", -100 + trip.back * 100);
+      drive.progress(trip.p - trip.back);
+      kmEl.textContent = fmt(3000 * (trip.p + trip.back));
+    };
+    tl.fromTo("#kar-world", { scale: 1.12, transformOrigin: "50% 35%" }, { scale: 1.0, duration: 9, ease: "power1.out" }, 0);
+    tl.fromTo("#kar-pulse", { scale: 1, opacity: 0.5, transformOrigin: "50% 50%" }, { scale: 2.2, opacity: 0, duration: 0.9, ease: "power1.out", repeat: 9 }, 0);
+    tl.fromTo("#kar-truck", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.7);
+    // Hinweg: bei „Frankreich“ an der Grenze, bei „Spanien“ in den Pyrenäen, bei „Kilometer“ in Tanger
+    tl.fromTo(trip, { p: 0 }, { p: 0.24, duration: 2.0, ease: "none", onUpdate: draw }, 1.9);
+    tl.to(trip, { p: 0.62, duration: 1.3, ease: "none", onUpdate: draw }, 3.9);
+    tl.to(trip, { p: 1, duration: 4.1, ease: "none", onUpdate: draw }, 5.2);
+    tl.fromTo("#map-fr", { fill: "#e9dcc0" }, { fill: "#f3b33d", duration: 0.3 }, 3.8);
+    tl.fromTo("#kar-l-fr", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 3.8);
+    tl.fromTo("#map-es", { fill: "#e9dcc0" }, { fill: "#f3b33d", duration: 0.3 }, 5.1);
+    tl.fromTo("#map-ma", { fill: "#e9dcc0" }, { fill: "#f3b33d", duration: 0.3 }, 9.2);
+    tl.fromTo("#kar-l-es", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 5.1);
+    tl.fromTo("#kar-l-ma", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 9.2);
+    tl.fromTo("#kar-km", { scale: 1 }, { scale: 1.15, duration: 0.15, yoyo: true, repeat: 1, transformOrigin: "0% 50%" }, 9.3);
+    // Rückweg: „das Ganze zurück“ bis „Direkt an der Nordsee“
+    tl.fromTo(trip, { back: 0 }, { back: 1, duration: 6.1, ease: "none", onUpdate: draw, immediateRender: false }, 24.8);
+    tl.fromTo("#kar-km", { scale: 1 }, { scale: 1.15, duration: 0.15, yoyo: true, repeat: 1, transformOrigin: "0% 50%", immediateRender: false }, 30.9);
+    tl.call(draw, null, 0);
     window.__timelines["karte"] = tl;
   </script>
 </template>

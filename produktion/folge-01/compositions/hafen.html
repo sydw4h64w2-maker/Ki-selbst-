@@ -73,16 +73,16 @@
         </g>
       </g>
     </svg>
-    <div id="haf-stamp-c" class="clip" data-start="3" data-duration="2">
+    <div id="haf-stamp-c" class="clip" data-start="4.6" data-duration="1.6">
       <div id="haf-stamp">NOCH NICHT GEPULT</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#haf-scene", { scale: 1.0 }, { scale: 1.08, duration: 5, ease: "none", transformOrigin: "50% 60%" }, 0);
-    tl.fromTo("#haf-crates", { y: -260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" }, 0.4);
-    tl.fromTo("#haf-truck", { x: 0 }, { x: -30, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 2.2);
-    tl.fromTo("#haf-stamp", { scale: 2.4, rotation: -14, opacity: 0 }, { scale: 1, rotation: -6, opacity: 1, duration: 0.18, ease: "power4.in" }, 3);
+    tl.fromTo("#haf-scene", { scale: 1.0 }, { scale: 1.08, duration: 6.2, ease: "none", transformOrigin: "50% 60%" }, 0);
+    tl.fromTo("#haf-crates", { y: -260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" }, 2.8);
+    tl.fromTo("#haf-truck", { x: 0 }, { x: -30, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 3.6);
+    tl.fromTo("#haf-stamp", { scale: 2.4, rotation: -14, opacity: 0 }, { scale: 1, rotation: -6, opacity: 1, duration: 0.18, ease: "power4.in" }, 4.6);
     window.__timelines["hafen"] = tl;
   </script>
 </template>

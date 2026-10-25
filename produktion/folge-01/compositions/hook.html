@@ -127,31 +127,31 @@
         </g>
       </svg>
     </div>
-    <div id="hook-title-c" class="clip" data-start="0" data-duration="4.5"><h1 id="hook-title">Diese Krabben<br />waren in <span class="y">Afrika.</span></h1></div>
-    <div id="hook-guess-c" class="clip" data-start="4.5" data-duration="4.5"><div id="hook-guess">
+    <div id="hook-title-c" class="clip" data-start="0" data-duration="5"><h1 id="hook-title">Diese Krabben<br />waren in <span class="y">Afrika.</span></h1></div>
+    <div id="hook-guess-c" class="clip" data-start="5" data-duration="5.1"><div id="hook-guess">
       <div id="hook-guess-km">??? km</div>
       <div id="hook-guess-sub">Schätz mal! &#8595;</div>
     </div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#hook-sandwich-wrap", { scale: 1, y: 0 }, { scale: 1.12, y: 20, duration: 4.5, ease: "none" }, 0);
-    tl.fromTo("#hook-boat", { x: 0 }, { x: -120, duration: 9, ease: "none" }, 0);
-    tl.fromTo("#hook-title", { scale: 1 }, { scale: 1.04, duration: 4.4, ease: "none" }, 0);
-    tl.to("#hook-sandwich-wrap", { scale: 0.86, y: 120, duration: 0.5, ease: "power3.out" }, 4.5);
-    tl.fromTo("#hook-guess", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 4.5);
+    tl.fromTo("#hook-sandwich-wrap", { scale: 1, y: 0 }, { scale: 1.12, y: 20, duration: 5, ease: "none" }, 0);
+    tl.fromTo("#hook-boat", { x: 0 }, { x: -120, duration: 10.1, ease: "none" }, 0);
+    tl.fromTo("#hook-title", { scale: 1 }, { scale: 1.04, duration: 4.9, ease: "none" }, 0);
+    tl.to("#hook-sandwich-wrap", { scale: 0.86, y: 120, duration: 0.5, ease: "power3.out" }, 5);
+    tl.fromTo("#hook-guess", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 5);
     // Ziffern flackern wie ein Zufallszähler, aber deterministisch
     const seq = ["???", "481", "2.1??", "?.9??", "12.0??", "???"];
     const km = document.querySelector("#hook-guess-km");
     const st = { i: 0 };
     tl.fromTo(st, { i: 0 }, {
       i: seq.length - 1,
-      duration: 1.8,
+      duration: 2.2,
       ease: "none",
       onUpdate: () => { km.textContent = seq[Math.round(st.i)] + " km"; },
-    }, 5.1);
-    tl.fromTo("#hook-guess-sub", { y: 0 }, { y: 14, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 7 }, 5);
-    tl.to("#hook-guess", { opacity: 0, duration: 0.2 }, 8.75);
+    }, 6.2);
+    tl.fromTo("#hook-guess-sub", { y: 0 }, { y: 14, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 8 }, 5.4);
+    tl.to("#hook-guess", { opacity: 0, duration: 0.2 }, 9.85);
     window.__timelines["hook"] = tl;
   </script>
 </template>
