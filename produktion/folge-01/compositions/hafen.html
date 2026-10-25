@@ -1,0 +1,88 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      font-family: "Inter", sans-serif;
+    }
+    #haf-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #a9cbd8 0%, #dbe9ee 45%, #6b7c84 45.1%, #56656c 100%);
+    }
+    #haf-scene {
+      position: absolute;
+      left: 0;
+      top: 380px;
+      width: 1080px;
+      height: 800px;
+    }
+    #haf-stamp-c {
+      position: absolute;
+      inset: 0;
+    }
+    #haf-stamp {
+      position: absolute;
+      left: 140px;
+      top: 470px;
+      width: 800px;
+      padding: 26px 0;
+      text-align: center;
+      border: 12px solid #e0362b;
+      border-radius: 26px;
+      color: #e0362b;
+      background: rgba(255, 255, 255, 0.88);
+      font-weight: 900;
+      font-size: 84px;
+      letter-spacing: 0.02em;
+    }
+  </style>
+  <div id="root" data-composition-id="hafen" data-width="1080" data-height="1920">
+    <div id="haf-bg"></div>
+    <svg id="haf-scene" viewBox="0 0 1080 800">
+      <g id="haf-truck">
+        <rect x="80" y="120" width="560" height="330" rx="16" fill="#f4f4f2" />
+        <rect x="80" y="120" width="560" height="60" rx="16" fill="#2f8fb0" />
+        <text data-layout-ignore x="120" y="330" font-family="Inter" font-weight="900" font-size="56" fill="#2f8fb0">KÜHLTRANSPORT</text>
+        <text data-layout-ignore x="120" y="390" font-family="Inter" font-weight="700" font-size="34" fill="#6a7a80">-2 °C</text>
+        <path d="M640 210 L780 210 L850 300 L850 450 L640 450 Z" fill="#2f8fb0" />
+        <path d="M660 230 L770 230 L825 300 L660 300 Z" fill="#bfe1ec" />
+        <circle cx="200" cy="470" r="50" fill="#1e2a2f" />
+        <circle cx="200" cy="470" r="22" fill="#9aa5aa" />
+        <circle cx="520" cy="470" r="50" fill="#1e2a2f" />
+        <circle cx="520" cy="470" r="22" fill="#9aa5aa" />
+        <circle cx="760" cy="470" r="50" fill="#1e2a2f" />
+        <circle cx="760" cy="470" r="22" fill="#9aa5aa" />
+      </g>
+      <g id="haf-crates">
+        <g transform="translate(560 540)">
+          <rect width="200" height="110" rx="10" fill="#2b6f9e" />
+          <rect x="12" y="10" width="176" height="40" rx="6" fill="#e9f4f8" />
+          <path d="M30 40 c0 -18 22 -22 34 -11 M80 42 c0 -18 22 -22 34 -11 M130 40 c0 -18 22 -22 34 -11" stroke="#ff8f70" stroke-width="14" fill="none" stroke-linecap="round" />
+        </g>
+        <g transform="translate(780 540)">
+          <rect width="200" height="110" rx="10" fill="#2b6f9e" />
+          <rect x="12" y="10" width="176" height="40" rx="6" fill="#e9f4f8" />
+          <path d="M30 40 c0 -18 22 -22 34 -11 M80 42 c0 -18 22 -22 34 -11 M130 40 c0 -18 22 -22 34 -11" stroke="#ff8f70" stroke-width="14" fill="none" stroke-linecap="round" />
+        </g>
+        <g transform="translate(670 420)">
+          <rect width="200" height="110" rx="10" fill="#e07b2f" />
+          <rect x="12" y="10" width="176" height="40" rx="6" fill="#e9f4f8" />
+          <path d="M30 40 c0 -18 22 -22 34 -11 M80 42 c0 -18 22 -22 34 -11 M130 40 c0 -18 22 -22 34 -11" stroke="#ff8f70" stroke-width="14" fill="none" stroke-linecap="round" />
+        </g>
+      </g>
+    </svg>
+    <div id="haf-stamp-c" class="clip" data-start="3" data-duration="2">
+      <div id="haf-stamp">NOCH NICHT GEPULT</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#haf-scene", { scale: 1.0 }, { scale: 1.08, duration: 5, ease: "none", transformOrigin: "50% 60%" }, 0);
+    tl.fromTo("#haf-crates", { y: -260, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "bounce.out" }, 0.4);
+    tl.fromTo("#haf-truck", { x: 0 }, { x: -30, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 2.2);
+    tl.fromTo("#haf-stamp", { scale: 2.4, rotation: -14, opacity: 0 }, { scale: 1, rotation: -6, opacity: 1, duration: 0.18, ease: "power4.in" }, 3);
+    window.__timelines["hafen"] = tl;
+  </script>
+</template>

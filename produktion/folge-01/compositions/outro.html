@@ -1,0 +1,159 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      font-family: "Inter", sans-serif;
+      color: #fff;
+    }
+    #out-beach-c, #out-tease-c, #out-ask-c {
+      position: absolute;
+      inset: 0;
+    }
+    #out-beach {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #59b6d6 0%, #a8dcea 50%, #2f9fc0 50.1%, #2f9fc0 62%, #f2d9a2 62.1%, #e8c98a 100%);
+    }
+    #out-sun {
+      position: absolute;
+      left: 760px;
+      top: 330px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #ffe27a;
+      box-shadow: 0 0 80px 30px rgba(255, 226, 122, 0.6);
+    }
+    #out-sand-wrap {
+      position: absolute;
+      left: 190px;
+      top: 720px;
+      width: 700px;
+      height: 490px;
+    }
+    #out-line {
+      position: absolute;
+      left: 0;
+      top: 300px;
+      width: 1080px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 96px;
+      line-height: 1.05;
+      text-shadow: 0 6px 22px rgba(0, 0, 0, 0.3);
+    }
+    #out-line2 {
+      color: #ffd23f;
+    }
+    #out-tease {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 48%, #24495a 0%, #0b1c25 62%);
+    }
+    #out-jeans {
+      position: absolute;
+      left: 340px;
+      top: 470px;
+      width: 400px;
+      height: 620px;
+    }
+    #out-morgen {
+      position: absolute;
+      left: 0;
+      top: 250px;
+      width: 1080px;
+      text-align: center;
+      font-weight: 900;
+      font-size: 70px;
+      letter-spacing: 0.14em;
+      color: #ffd23f;
+    }
+    #out-ask {
+      position: absolute;
+      left: 110px;
+      top: 700px;
+      width: 860px;
+      padding: 28px 30px;
+      border-radius: 34px 34px 34px 6px;
+      background: #ffffff;
+      color: #0b1c25;
+      text-align: center;
+      font-weight: 900;
+      font-size: 58px;
+      line-height: 1.1;
+    }
+    #out-brand {
+      position: absolute;
+      left: 0;
+      top: 360px;
+      width: 1080px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 40px;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+  <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
+    <div id="out-beach-c" class="clip" data-start="0" data-duration="5">
+      <div id="out-beach"></div>
+      <div id="out-sun"></div>
+      <div id="out-sand-wrap">
+        <svg viewBox="0 0 800 560" width="700" height="490">
+          <defs>
+            <linearGradient id="out-bun" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f2b064" />
+              <stop offset="1" stop-color="#c97a35" />
+            </linearGradient>
+            <g id="out-shrimp">
+              <path d="M-60 0 C-60 -55 10 -70 45 -35 C65 -15 55 20 25 25" fill="none" stroke="#ff8f70" stroke-width="44" stroke-linecap="round" />
+            </g>
+          </defs>
+          <ellipse cx="400" cy="500" rx="360" ry="40" fill="rgba(0,0,0,0.2)" />
+          <path d="M60 380 C60 300 740 300 740 380 C740 470 60 470 60 380 Z" fill="url(#out-bun)" />
+          <path d="M70 360 C150 320 220 380 300 340 C380 300 440 370 520 335 C600 300 660 370 735 345 L735 380 L70 380 Z" fill="#7cc35a" />
+          <use href="#out-shrimp" transform="translate(200 330) rotate(-10)" />
+          <use href="#out-shrimp" transform="translate(340 315) rotate(12)" />
+          <use href="#out-shrimp" transform="translate(480 320) rotate(-6)" />
+          <use href="#out-shrimp" transform="translate(610 335) rotate(14)" />
+          <path d="M80 250 C90 110 710 110 720 250 C720 280 80 280 80 250 Z" fill="url(#out-bun)" transform="translate(0 -10)" />
+          <g id="out-glasses">
+            <rect x="250" y="150" width="130" height="80" rx="30" fill="#111" />
+            <rect x="420" y="150" width="130" height="80" rx="30" fill="#111" />
+            <path d="M380 180 L420 180" stroke="#111" stroke-width="14" />
+            <rect x="270" y="162" width="40" height="16" rx="8" fill="rgba(255,255,255,0.5)" />
+            <rect x="440" y="162" width="40" height="16" rx="8" fill="rgba(255,255,255,0.5)" />
+          </g>
+        </svg>
+      </div>
+      <div id="out-line"><div id="out-line1">Schon im Urlaub.</div><div id="out-line2">Weiter als du.</div></div>
+    </div>
+    <div id="out-tease-c" class="clip" data-start="5" data-duration="8">
+      <div id="out-tease"></div>
+      <div id="out-morgen">MORGEN</div>
+      <div id="out-brand">DIE REISE VON &hellip; &middot; FOLGE 2</div>
+      <svg id="out-jeans" viewBox="0 0 400 620">
+        <path d="M60 20 L340 20 L370 600 L235 600 L200 220 L165 600 L30 600 Z" fill="#05121a" stroke="#4fa3c7" stroke-width="5" />
+        <path d="M60 70 L340 70" stroke="#4fa3c7" stroke-width="3" opacity="0.6" />
+      </svg>
+    </div>
+    <div id="out-ask-c" class="clip" data-start="8.4" data-duration="4.6">
+      <div id="out-ask">Was soll als Nächstes reisen?<br />Schreib's in die Kommentare!</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#out-sand-wrap", { y: 40, rotation: -3 }, { y: 0, rotation: 3, duration: 5, ease: "sine.inOut" }, 0);
+    tl.fromTo("#out-glasses", { y: -300, opacity: 0 }, { y: 0, opacity: 1, duration: 0.45, ease: "bounce.out" }, 0.8);
+    tl.fromTo("#out-line1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.4);
+    tl.fromTo("#out-line2", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 3.3);
+    tl.fromTo("#out-jeans", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.8, ease: "power2.out" }, 5.1);
+    tl.fromTo("#out-jeans", { filter: "drop-shadow(0 0 0px #4fa3c7)" }, { filter: "drop-shadow(0 0 40px #4fa3c7)", duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }, 5.9);
+    tl.fromTo("#out-morgen", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power3.out" }, 5.1);
+    tl.fromTo("#out-brand", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 5.6);
+    tl.fromTo("#out-ask", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 8.4);
+    window.__timelines["outro"] = tl;
+  </script>
+</template>

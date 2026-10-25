@@ -1,0 +1,792 @@
+[
+{
+"text": "Diese",
+"start": 0.2,
+"end": 0.464
+},
+{
+"text": "Krabben",
+"start": 0.511,
+"end": 0.842
+},
+{
+"text": "kommen",
+"start": 0.9,
+"end": 1.198
+},
+{
+"text": "aus",
+"start": 1.25,
+"end": 1.448
+},
+{
+"text": "der",
+"start": 1.483,
+"end": 1.682
+},
+{
+"text": "Nordsee.",
+"start": 1.717,
+"end": 2.279
+},
+{
+"text": "Und",
+"start": 2.378,
+"end": 2.576
+},
+{
+"text": "trotzdem",
+"start": 2.611,
+"end": 2.975
+},
+{
+"text": "waren",
+"start": 3.039,
+"end": 3.303
+},
+{
+"text": "sie",
+"start": 3.35,
+"end": 3.548
+},
+{
+"text": "in",
+"start": 3.583,
+"end": 3.749
+},
+{
+"text": "Afrika.",
+"start": 3.778,
+"end": 4.307
+},
+{
+"text": "Schätz",
+"start": 4.5,
+"end": 4.79
+},
+{
+"text": "mal:",
+"start": 4.841,
+"end": 5.261
+},
+{
+"text": "Wie",
+"start": 5.334,
+"end": 5.528
+},
+{
+"text": "weit",
+"start": 5.562,
+"end": 5.788
+},
+{
+"text": "sind",
+"start": 5.828,
+"end": 6.053
+},
+{
+"text": "sie",
+"start": 6.093,
+"end": 6.287
+},
+{
+"text": "gereist?",
+"start": 6.321,
+"end": 6.869
+},
+{
+"text": "Schreib's",
+"start": 6.966,
+"end": 7.352
+},
+{
+"text": "jetzt",
+"start": 7.421,
+"end": 7.679
+},
+{
+"text": "in",
+"start": 7.724,
+"end": 7.885
+},
+{
+"text": "die",
+"start": 7.914,
+"end": 8.107
+},
+{
+"text": "Kommentare.",
+"start": 8.141,
+"end": 8.786
+},
+{
+"text": "Station",
+"start": 9.0,
+"end": 9.326
+},
+{
+"text": "eins.",
+"start": 9.383,
+"end": 9.839
+},
+{
+"text": "Ein",
+"start": 9.92,
+"end": 10.116
+},
+{
+"text": "Krabbenkutter",
+"start": 10.15,
+"end": 10.671
+},
+{
+"text": "vor",
+"start": 10.763,
+"end": 10.959
+},
+{
+"text": "der",
+"start": 10.993,
+"end": 11.189
+},
+{
+"text": "deutschen",
+"start": 11.223,
+"end": 11.614
+},
+{
+"text": "Küste.",
+"start": 11.683,
+"end": 12.172
+},
+{
+"text": "Die",
+"start": 12.258,
+"end": 12.454
+},
+{
+"text": "Krabben",
+"start": 12.488,
+"end": 12.814
+},
+{
+"text": "werden",
+"start": 12.872,
+"end": 13.165
+},
+{
+"text": "noch",
+"start": 13.217,
+"end": 13.445
+},
+{
+"text": "an",
+"start": 13.485,
+"end": 13.648
+},
+{
+"text": "Bord",
+"start": 13.677,
+"end": 13.905
+},
+{
+"text": "gekocht.",
+"start": 13.945,
+"end": 14.499
+},
+{
+"text": "Direkt",
+"start": 14.597,
+"end": 14.89
+},
+{
+"text": "in",
+"start": 14.942,
+"end": 15.105
+},
+{
+"text": "Meerwasser.",
+"start": 15.133,
+"end": 15.785
+},
+{
+"text": "Station",
+"start": 16.0,
+"end": 16.35
+},
+{
+"text": "zwei.",
+"start": 16.412,
+"end": 16.902
+},
+{
+"text": "Der",
+"start": 16.988,
+"end": 17.198
+},
+{
+"text": "Hafen.",
+"start": 17.235,
+"end": 17.76
+},
+{
+"text": "Die",
+"start": 17.853,
+"end": 18.063
+},
+{
+"text": "Krabben",
+"start": 18.1,
+"end": 18.45
+},
+{
+"text": "werden",
+"start": 18.512,
+"end": 18.827
+},
+{
+"text": "verpackt.",
+"start": 18.882,
+"end": 19.512
+},
+{
+"text": "Aber",
+"start": 19.624,
+"end": 19.869
+},
+{
+"text": "nicht",
+"start": 19.912,
+"end": 20.192
+},
+{
+"text": "gepult.",
+"start": 20.241,
+"end": 20.801
+},
+{
+"text": "Station",
+"start": 21.0,
+"end": 21.353
+},
+{
+"text": "drei.",
+"start": 21.416,
+"end": 21.911
+},
+{
+"text": "Ein",
+"start": 21.998,
+"end": 22.21
+},
+{
+"text": "Kühllaster",
+"start": 22.247,
+"end": 22.707
+},
+{
+"text": "fährt",
+"start": 22.788,
+"end": 23.071
+},
+{
+"text": "los.",
+"start": 23.121,
+"end": 23.58
+},
+{
+"text": "Durch",
+"start": 23.661,
+"end": 23.944
+},
+{
+"text": "Frankreich.",
+"start": 23.994,
+"end": 24.701
+},
+{
+"text": "Durch",
+"start": 24.825,
+"end": 25.108
+},
+{
+"text": "Spanien.",
+"start": 25.158,
+"end": 25.759
+},
+{
+"text": "Über",
+"start": 25.865,
+"end": 26.112
+},
+{
+"text": "das",
+"start": 26.156,
+"end": 26.368
+},
+{
+"text": "Mittelmeer.",
+"start": 26.405,
+"end": 27.112
+},
+{
+"text": "Rund",
+"start": 27.237,
+"end": 27.484
+},
+{
+"text": "dreitausend",
+"start": 27.528,
+"end": 28.023
+},
+{
+"text": "Kilometer.",
+"start": 28.11,
+"end": 28.781
+},
+{
+"text": "Station",
+"start": 29.0,
+"end": 29.329
+},
+{
+"text": "vier.",
+"start": 29.387,
+"end": 29.847
+},
+{
+"text": "Marokko.",
+"start": 29.928,
+"end": 30.487
+},
+{
+"text": "Hier",
+"start": 30.586,
+"end": 30.816
+},
+{
+"text": "werden",
+"start": 30.857,
+"end": 31.153
+},
+{
+"text": "die",
+"start": 31.205,
+"end": 31.402
+},
+{
+"text": "Krabben",
+"start": 31.437,
+"end": 31.766
+},
+{
+"text": "gepult.",
+"start": 31.824,
+"end": 32.35
+},
+{
+"text": "Von",
+"start": 32.443,
+"end": 32.64
+},
+{
+"text": "Hand.",
+"start": 32.675,
+"end": 33.135
+},
+{
+"text": "Über",
+"start": 33.216,
+"end": 33.447
+},
+{
+"text": "neunzig",
+"start": 33.487,
+"end": 33.816
+},
+{
+"text": "Prozent",
+"start": 33.874,
+"end": 34.203
+},
+{
+"text": "aller",
+"start": 34.261,
+"end": 34.524
+},
+{
+"text": "Nordseekrabben.",
+"start": 34.57,
+"end": 35.36
+},
+{
+"text": "Weil",
+"start": 35.499,
+"end": 35.729
+},
+{
+"text": "es",
+"start": 35.77,
+"end": 35.934
+},
+{
+"text": "hier",
+"start": 35.963,
+"end": 36.193
+},
+{
+"text": "viel",
+"start": 36.234,
+"end": 36.464
+},
+{
+"text": "billiger",
+"start": 36.505,
+"end": 36.866
+},
+{
+"text": "ist",
+"start": 36.93,
+"end": 37.127
+},
+{
+"text": "als",
+"start": 37.162,
+"end": 37.359
+},
+{
+"text": "in",
+"start": 37.394,
+"end": 37.559
+},
+{
+"text": "Deutschland.",
+"start": 37.588,
+"end": 38.278
+},
+{
+"text": "Station",
+"start": 38.5,
+"end": 38.843
+},
+{
+"text": "fünf.",
+"start": 38.903,
+"end": 39.383
+},
+{
+"text": "Und",
+"start": 39.467,
+"end": 39.673
+},
+{
+"text": "dann:",
+"start": 39.709,
+"end": 40.189
+},
+{
+"text": "das",
+"start": 40.273,
+"end": 40.479
+},
+{
+"text": "Ganze",
+"start": 40.515,
+"end": 40.789
+},
+{
+"text": "zurück.",
+"start": 40.838,
+"end": 41.386
+},
+{
+"text": "Noch",
+"start": 41.483,
+"end": 41.722
+},
+{
+"text": "einmal",
+"start": 41.765,
+"end": 42.073
+},
+{
+"text": "dreitausend",
+"start": 42.128,
+"end": 42.607
+},
+{
+"text": "Kilometer.",
+"start": 42.692,
+"end": 43.343
+},
+{
+"text": "Bis",
+"start": 43.458,
+"end": 43.663
+},
+{
+"text": "in",
+"start": 43.699,
+"end": 43.871
+},
+{
+"text": "die",
+"start": 43.901,
+"end": 44.107
+},
+{
+"text": "Kühltheke.",
+"start": 44.143,
+"end": 44.794
+},
+{
+"text": "Direkt",
+"start": 44.909,
+"end": 45.217
+},
+{
+"text": "an",
+"start": 45.271,
+"end": 45.443
+},
+{
+"text": "der",
+"start": 45.473,
+"end": 45.679
+},
+{
+"text": "Nordsee.",
+"start": 45.715,
+"end": 46.297
+},
+{
+"text": "Rund",
+"start": 46.5,
+"end": 46.766
+},
+{
+"text": "sechstausend",
+"start": 46.813,
+"end": 47.384
+},
+{
+"text": "Kilometer.",
+"start": 47.485,
+"end": 48.208
+},
+{
+"text": "Vier",
+"start": 48.335,
+"end": 48.602
+},
+{
+"text": "Länder.",
+"start": 48.649,
+"end": 49.257
+},
+{
+"text": "Ungefähr",
+"start": 49.365,
+"end": 49.783
+},
+{
+"text": "zwei",
+"start": 49.857,
+"end": 50.123
+},
+{
+"text": "Wochen",
+"start": 50.17,
+"end": 50.513
+},
+{
+"text": "unterwegs.",
+"start": 50.573,
+"end": 51.296
+},
+{
+"text": "Für",
+"start": 51.424,
+"end": 51.652
+},
+{
+"text": "Krabben,",
+"start": 51.692,
+"end": 52.111
+},
+{
+"text": "die",
+"start": 52.185,
+"end": 52.413
+},
+{
+"text": "ein",
+"start": 52.453,
+"end": 52.682
+},
+{
+"text": "paar",
+"start": 52.722,
+"end": 52.988
+},
+{
+"text": "Kilometer",
+"start": 53.035,
+"end": 53.492
+},
+{
+"text": "vom",
+"start": 53.572,
+"end": 53.801
+},
+{
+"text": "Hafen",
+"start": 53.841,
+"end": 54.145
+},
+{
+"text": "entfernt",
+"start": 54.199,
+"end": 54.618
+},
+{
+"text": "gefangen",
+"start": 54.691,
+"end": 55.11
+},
+{
+"text": "wurden.",
+"start": 55.184,
+"end": 55.793
+},
+{
+"text": "Dein",
+"start": 56.0,
+"end": 56.267
+},
+{
+"text": "fangfrisches",
+"start": 56.315,
+"end": 56.888
+},
+{
+"text": "Krabbenbrötchen",
+"start": 56.989,
+"end": 57.677
+},
+{
+"text": "war",
+"start": 57.798,
+"end": 58.027
+},
+{
+"text": "also",
+"start": 58.068,
+"end": 58.335
+},
+{
+"text": "schon",
+"start": 58.383,
+"end": 58.688
+},
+{
+"text": "im",
+"start": 58.742,
+"end": 58.933
+},
+{
+"text": "Urlaub.",
+"start": 58.967,
+"end": 59.578
+},
+{
+"text": "Weiter",
+"start": 59.686,
+"end": 60.03
+},
+{
+"text": "als",
+"start": 60.091,
+"end": 60.32
+},
+{
+"text": "du.",
+"start": 60.361,
+"end": 60.819
+},
+{
+"text": "Morgen:",
+"start": 61.0,
+"end": 61.597
+},
+{
+"text": "Etwas,",
+"start": 61.702,
+"end": 62.038
+},
+{
+"text": "das",
+"start": 62.097,
+"end": 62.321
+},
+{
+"text": "du",
+"start": 62.36,
+"end": 62.546
+},
+{
+"text": "vielleicht",
+"start": 62.579,
+"end": 63.064
+},
+{
+"text": "gerade",
+"start": 63.15,
+"end": 63.485
+},
+{
+"text": "anhast.",
+"start": 63.545,
+"end": 64.141
+},
+{
+"text": "Was",
+"start": 64.246,
+"end": 64.47
+},
+{
+"text": "soll",
+"start": 64.51,
+"end": 64.771
+},
+{
+"text": "danach",
+"start": 64.817,
+"end": 65.152
+},
+{
+"text": "reisen?",
+"start": 65.212,
+"end": 65.808
+},
+{
+"text": "Schreib's",
+"start": 65.914,
+"end": 66.361
+},
+{
+"text": "in",
+"start": 66.44,
+"end": 66.626
+},
+{
+"text": "die",
+"start": 66.659,
+"end": 66.883
+},
+{
+"text": "Kommentare.",
+"start": 66.923,
+"end": 67.668
+}
+]

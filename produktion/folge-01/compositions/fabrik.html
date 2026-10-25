@@ -1,0 +1,168 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      font-family: "Inter", sans-serif;
+      background: #dfe6e8;
+    }
+    #fab-hall {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1080px;
+      height: 1920px;
+    }
+    #fab-tag {
+      position: absolute;
+      left: 0;
+      top: 380px;
+      width: 1080px;
+      text-align: center;
+    }
+    #fab-tag span {
+      display: inline-block;
+      padding: 16px 34px;
+      border-radius: 999px;
+      background: #c1272d;
+      color: #fff;
+      font-weight: 900;
+      font-size: 50px;
+      letter-spacing: 0.06em;
+    }
+    #fab-big-c, #fab-wage-c {
+      position: absolute;
+      inset: 0;
+    }
+    #fab-big {
+      position: absolute;
+      left: 190px;
+      top: 560px;
+      width: 700px;
+      padding: 30px 0 40px;
+      border-radius: 44px;
+      background: rgba(11, 28, 37, 0.94);
+      text-align: center;
+      color: #fff;
+    }
+    #fab-big-n {
+      font-weight: 900;
+      font-size: 230px;
+      line-height: 1;
+      color: #ffd23f;
+      font-variant-numeric: tabular-nums;
+    }
+    #fab-big-pre {
+      font-weight: 700;
+      font-size: 46px;
+      color: #ffd23f;
+    }
+    #fab-big-sub {
+      font-weight: 700;
+      font-size: 46px;
+      margin-top: 8px;
+    }
+    #fab-wage {
+      position: absolute;
+      left: 0;
+      top: 1000px;
+      width: 1080px;
+      text-align: center;
+    }
+    #fab-wage span {
+      display: inline-block;
+      padding: 16px 30px;
+      border-radius: 20px;
+      background: #ffd23f;
+      color: #0b1c25;
+      font-weight: 900;
+      font-size: 46px;
+    }
+  </style>
+  <div id="root" data-composition-id="fabrik" data-width="1080" data-height="1920">
+    <svg id="fab-hall" viewBox="0 0 1080 1920">
+      <g id="fab-floor">
+<rect x="90" y="520" width="900" height="90" rx="20" fill="#f7f7f5" stroke="#c9cfd2" stroke-width="4"/>
+<g fill="#ff8f70"><circle cx="120" cy="553" r="9"/><circle cx="158" cy="577" r="9"/><circle cx="196" cy="553" r="9"/><circle cx="234" cy="577" r="9"/><circle cx="272" cy="553" r="9"/><circle cx="310" cy="577" r="9"/><circle cx="348" cy="553" r="9"/><circle cx="386" cy="577" r="9"/><circle cx="424" cy="553" r="9"/><circle cx="462" cy="577" r="9"/><circle cx="500" cy="553" r="9"/><circle cx="538" cy="577" r="9"/><circle cx="576" cy="553" r="9"/><circle cx="614" cy="577" r="9"/><circle cx="652" cy="553" r="9"/><circle cx="690" cy="577" r="9"/><circle cx="728" cy="553" r="9"/><circle cx="766" cy="577" r="9"/><circle cx="804" cy="553" r="9"/><circle cx="842" cy="577" r="9"/><circle cx="880" cy="553" r="9"/><circle cx="918" cy="577" r="9"/><circle cx="956" cy="553" r="9"/></g>
+<g transform="translate(150 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(260 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(370 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(480 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(590 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(700 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(810 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(920 465)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(150 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(260 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(370 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(480 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(590 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(700 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(810 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(920 665)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<rect x="90" y="820" width="900" height="90" rx="20" fill="#f7f7f5" stroke="#c9cfd2" stroke-width="4"/>
+<g fill="#ff8f70"><circle cx="120" cy="853" r="9"/><circle cx="158" cy="877" r="9"/><circle cx="196" cy="853" r="9"/><circle cx="234" cy="877" r="9"/><circle cx="272" cy="853" r="9"/><circle cx="310" cy="877" r="9"/><circle cx="348" cy="853" r="9"/><circle cx="386" cy="877" r="9"/><circle cx="424" cy="853" r="9"/><circle cx="462" cy="877" r="9"/><circle cx="500" cy="853" r="9"/><circle cx="538" cy="877" r="9"/><circle cx="576" cy="853" r="9"/><circle cx="614" cy="877" r="9"/><circle cx="652" cy="853" r="9"/><circle cx="690" cy="877" r="9"/><circle cx="728" cy="853" r="9"/><circle cx="766" cy="877" r="9"/><circle cx="804" cy="853" r="9"/><circle cx="842" cy="877" r="9"/><circle cx="880" cy="853" r="9"/><circle cx="918" cy="877" r="9"/><circle cx="956" cy="853" r="9"/></g>
+<g transform="translate(150 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(260 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(370 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(480 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(590 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(700 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(810 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(920 765)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(150 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(260 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(370 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(480 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(590 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(700 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(810 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(920 965)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<rect x="90" y="1120" width="900" height="90" rx="20" fill="#f7f7f5" stroke="#c9cfd2" stroke-width="4"/>
+<g fill="#ff8f70"><circle cx="120" cy="1153" r="9"/><circle cx="158" cy="1177" r="9"/><circle cx="196" cy="1153" r="9"/><circle cx="234" cy="1177" r="9"/><circle cx="272" cy="1153" r="9"/><circle cx="310" cy="1177" r="9"/><circle cx="348" cy="1153" r="9"/><circle cx="386" cy="1177" r="9"/><circle cx="424" cy="1153" r="9"/><circle cx="462" cy="1177" r="9"/><circle cx="500" cy="1153" r="9"/><circle cx="538" cy="1177" r="9"/><circle cx="576" cy="1153" r="9"/><circle cx="614" cy="1177" r="9"/><circle cx="652" cy="1153" r="9"/><circle cx="690" cy="1177" r="9"/><circle cx="728" cy="1153" r="9"/><circle cx="766" cy="1177" r="9"/><circle cx="804" cy="1153" r="9"/><circle cx="842" cy="1177" r="9"/><circle cx="880" cy="1153" r="9"/><circle cx="918" cy="1177" r="9"/><circle cx="956" cy="1153" r="9"/></g>
+<g transform="translate(150 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(260 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(370 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(480 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(590 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(700 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(810 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(920 1065)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="30" r="11" fill="#c98a5a"/><circle cx="16" cy="30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(150 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(260 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(370 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(480 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(590 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(700 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h1"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(810 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h2"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+<g transform="translate(920 1265)"><circle r="40" fill="#e7eef1"/><circle r="30" fill="#ffffff" stroke="#d5dde0" stroke-width="3"/><g class="fab-hand fab-h0"><circle cx="-16" cy="-30" r="11" fill="#c98a5a"/><circle cx="16" cy="-30" r="11" fill="#c98a5a"/></g></g>
+      </g>
+    </svg>
+    <div id="fab-tag"><span>MAROKKO</span></div>
+    <div id="fab-big-c" class="clip" data-start="4.4" data-duration="3">
+      <div id="fab-big">
+        <div id="fab-big-pre">über</div>
+        <div id="fab-big-n">90 %</div>
+        <div id="fab-big-sub">aller Nordseekrabben</div>
+      </div>
+    </div>
+    <div id="fab-wage-c" class="clip" data-start="7.2" data-duration="2.3">
+      <div id="fab-wage"><span>Grund: viel niedrigere Löhne</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fab-floor", { scale: 1.25, transformOrigin: "50% 45%" }, { scale: 1.0, duration: 9.5, ease: "power1.out" }, 0);
+    tl.fromTo("#fab-tag span", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }, 0.3);
+    tl.fromTo(".fab-h0", { y: 0 }, { y: -8, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 37 }, 0);
+    tl.fromTo(".fab-h1", { y: -6 }, { y: 4, duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 31 }, 0);
+    tl.fromTo(".fab-h2", { x: -4 }, { x: 5, duration: 0.22, ease: "sine.inOut", yoyo: true, repeat: 42 }, 0);
+    const n = document.querySelector("#fab-big-n");
+    const c = { v: 0 };
+    tl.fromTo("#fab-big", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2)" }, 4.4);
+    tl.fromTo(c, { v: 0 }, { v: 90, duration: 1.3, ease: "power2.out", onUpdate: () => (n.textContent = Math.round(c.v) + " %") }, 4.5);
+    tl.fromTo("#fab-wage span", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.25, ease: "back.out(2)" }, 7.2);
+    window.__timelines["fabrik"] = tl;
+  </script>
+</template>

@@ -1,0 +1,121 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      font-family: "Inter", sans-serif;
+    }
+    #kut-sky {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #9cc3d2 0%, #f3d3a8 52%, #e9b98a 60%, #2a6a80 60.1%, #123f50 100%);
+    }
+    .kut-wave {
+      position: absolute;
+      left: -400px;
+      width: 1880px;
+    }
+    #kut-wave1 { top: 1120px; }
+    #kut-wave2 { top: 1190px; }
+    #kut-wave3 { top: 1270px; }
+    #kut-boat {
+      position: absolute;
+      left: 190px;
+      top: 640px;
+      width: 700px;
+    }
+    #kut-pot-c {
+      position: absolute;
+      inset: 0;
+    }
+    #kut-pot {
+      position: absolute;
+      left: 190px;
+      top: 330px;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 40%, #3b4f58 0%, #1b2a31 75%);
+      border: 14px solid #fff;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+    }
+    #kut-chip {
+      position: absolute;
+      left: 0;
+      top: 1060px;
+      width: 1080px;
+      text-align: center;
+    }
+    #kut-chip span {
+      display: inline-block;
+      padding: 18px 34px;
+      border-radius: 999px;
+      background: #ff5a3a;
+      color: #fff;
+      font-weight: 900;
+      font-size: 46px;
+    }
+  </style>
+  <div id="root" data-composition-id="kutter" data-width="1080" data-height="1920">
+    <div id="kut-sky"></div>
+    <svg id="kut-boat" viewBox="0 0 700 520">
+      <path d="M350 40 L350 330" stroke="#1d3540" stroke-width="12" />
+      <path d="M350 70 L60 300 M350 70 L640 300" stroke="#1d3540" stroke-width="9" />
+      <path d="M60 300 L40 380 M640 300 L660 380" stroke="#1d3540" stroke-width="4" stroke-dasharray="10 8" />
+      <path d="M20 380 L60 300 L100 380 Z M600 380 L640 300 L680 380 Z" fill="rgba(29,53,64,0.35)" />
+      <path d="M70 360 L640 360 L590 470 L130 470 Z" fill="#c8402e" />
+      <path d="M70 360 L640 360 L630 385 L80 385 Z" fill="#f4f1ea" />
+      <rect x="380" y="250" width="150" height="110" rx="10" fill="#f4f1ea" />
+      <rect x="400" y="270" width="45" height="40" rx="6" fill="#7fb4c9" />
+      <rect x="465" y="270" width="45" height="40" rx="6" fill="#7fb4c9" />
+      <rect x="200" y="320" width="90" height="40" rx="6" fill="#3b5560" />
+      <text x="230" y="440" font-family="Inter" font-weight="900" font-size="34" fill="#fff" data-layout-ignore>BÜS 7</text>
+    </svg>
+    <svg class="kut-wave" id="kut-wave1" viewBox="0 0 1880 120" preserveAspectRatio="none" height="120">
+      <path d="M0 60 Q 47 20 94 60 T 188 60 T 282 60 T 376 60 T 470 60 T 564 60 T 658 60 T 752 60 T 846 60 T 940 60 T 1034 60 T 1128 60 T 1222 60 T 1316 60 T 1410 60 T 1504 60 T 1598 60 T 1692 60 T 1786 60 T 1880 60 L1880 120 L0 120 Z" fill="#1e5a6e" />
+    </svg>
+    <svg class="kut-wave" id="kut-wave2" viewBox="0 0 1880 120" preserveAspectRatio="none" height="120">
+      <path d="M0 60 Q 47 20 94 60 T 188 60 T 282 60 T 376 60 T 470 60 T 564 60 T 658 60 T 752 60 T 846 60 T 940 60 T 1034 60 T 1128 60 T 1222 60 T 1316 60 T 1410 60 T 1504 60 T 1598 60 T 1692 60 T 1786 60 T 1880 60 L1880 120 L0 120 Z" fill="#174c5e" />
+    </svg>
+    <svg class="kut-wave" id="kut-wave3" viewBox="0 0 1880 700" preserveAspectRatio="none" height="700">
+      <path d="M0 60 Q 47 20 94 60 T 188 60 T 282 60 T 376 60 T 470 60 T 564 60 T 658 60 T 752 60 T 846 60 T 940 60 T 1034 60 T 1128 60 T 1222 60 T 1316 60 T 1410 60 T 1504 60 T 1598 60 T 1692 60 T 1786 60 T 1880 60 L1880 700 L0 700 Z" fill="#123f50" />
+    </svg>
+    <div id="kut-pot-c" class="clip" data-start="3.2" data-duration="3.8">
+      <div id="kut-pot">
+        <svg viewBox="0 0 700 700" width="700" height="700">
+          <ellipse cx="350" cy="420" rx="250" ry="70" fill="#9aa7ad" />
+          <ellipse cx="350" cy="410" rx="225" ry="55" fill="#d4e6ea" />
+          <g id="kut-shrimps">
+            <path d="M230 405 c0 -35 45 -45 68 -22" stroke="#ff8f70" stroke-width="30" fill="none" stroke-linecap="round" />
+            <path d="M320 420 c0 -35 45 -45 68 -22" stroke="#ff8f70" stroke-width="30" fill="none" stroke-linecap="round" />
+            <path d="M410 400 c0 -35 45 -45 68 -22" stroke="#ff8f70" stroke-width="30" fill="none" stroke-linecap="round" />
+            <path d="M280 440 c0 -35 45 -45 68 -22" stroke="#ff8f70" stroke-width="30" fill="none" stroke-linecap="round" />
+            <path d="M380 445 c0 -35 45 -45 68 -22" stroke="#ff8f70" stroke-width="30" fill="none" stroke-linecap="round" />
+          </g>
+          <g id="kut-steam" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="16" stroke-linecap="round">
+            <path d="M270 330 c-30 -40 30 -60 0 -110" />
+            <path d="M350 320 c-30 -40 30 -60 0 -120" />
+            <path d="M430 330 c-30 -40 30 -60 0 -110" />
+          </g>
+          <path d="M100 420 L130 600 L570 600 L600 420" fill="#5c6b72" />
+        </svg>
+      </div>
+      <div id="kut-chip"><span>An Bord gekocht &middot; in Meerwasser</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#kut-wave1", { x: 0 }, { x: -188, duration: 7, ease: "none" }, 0);
+    tl.fromTo("#kut-wave2", { x: -94 }, { x: 94, duration: 7, ease: "none" }, 0);
+    tl.fromTo("#kut-wave3", { x: 0 }, { x: -282, duration: 7, ease: "none" }, 0);
+    tl.fromTo("#kut-boat", { y: 0, rotation: -2, scale: 1.08 }, { y: 18, rotation: 2, scale: 1.08, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 4 }, 0);
+    tl.fromTo("#kut-boat", { x: 160 }, { x: -60, duration: 7, ease: "none" }, 0);
+    tl.fromTo("#kut-pot", { scale: 0.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.45, ease: "back.out(1.6)" }, 3.2);
+    tl.fromTo("#kut-shrimps", { opacity: 0.35 }, { opacity: 1, duration: 1.2, ease: "power1.out" }, 3.5);
+    tl.fromTo("#kut-steam", { y: 20, opacity: 0.2 }, { y: -30, opacity: 0.9, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 3.3);
+    tl.fromTo("#kut-chip span", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power3.out" }, 3.6);
+    window.__timelines["kutter"] = tl;
+  </script>
+</template>

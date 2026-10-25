@@ -1,0 +1,157 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      font-family: "Inter", sans-serif;
+    }
+    #hook-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #2b5f78 0%, #e98f62 46%, #f6c07a 58%, #1c4a5c 58.2%, #0f3a4b 100%);
+    }
+    #hook-boat {
+      position: absolute;
+      left: 640px;
+      top: 1000px;
+      width: 260px;
+    }
+    #hook-sun {
+      position: absolute;
+      left: 160px;
+      top: 960px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff1c4 0%, #ffd27a 45%, rgba(255, 190, 110, 0) 70%);
+    }
+    #hook-table {
+      position: absolute;
+      left: 0;
+      top: 1240px;
+      width: 1080px;
+      height: 680px;
+      background: linear-gradient(180deg, #8a5a3b 0%, #6d432a 100%);
+    }
+    #hook-sandwich-wrap {
+      position: absolute;
+      left: 140px;
+      top: 700px;
+      width: 800px;
+      height: 560px;
+    }
+    #hook-sandwich {
+      width: 100%;
+      height: 100%;
+    }
+    #hook-title-c, #hook-guess-c { position: absolute; inset: 0; }
+    #hook-title {
+      position: absolute;
+      left: 0;
+      top: 230px;
+      width: 1080px;
+      text-align: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 104px;
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      text-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    }
+    #hook-title .y {
+      color: var(--yellow, #ffd23f);
+    }
+    #hook-guess {
+      position: absolute;
+      left: 140px;
+      top: 300px;
+      width: 800px;
+      padding: 40px 0 46px;
+      border-radius: 40px;
+      background: rgba(11, 28, 37, 0.92);
+      text-align: center;
+      color: #fff;
+    }
+    #hook-guess-km {
+      font-weight: 900;
+      font-size: 150px;
+      line-height: 1;
+      color: #ffd23f;
+      font-variant-numeric: tabular-nums;
+    }
+    #hook-guess-sub {
+      margin-top: 18px;
+      font-weight: 700;
+      font-size: 52px;
+    }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hook-bg"></div>
+    <div id="hook-sun"></div>
+    <svg id="hook-boat" viewBox="0 0 260 140">
+      <path d="M20 90 L240 90 L210 125 L45 125 Z" fill="#14303b" />
+      <rect x="100" y="55" width="60" height="35" fill="#14303b" />
+      <path d="M130 10 L130 90 M130 20 L40 80 M130 20 L225 80" stroke="#14303b" stroke-width="5" />
+    </svg>
+    <div id="hook-table"></div>
+    <div id="hook-sandwich-wrap">
+      <svg id="hook-sandwich" viewBox="0 0 800 560">
+        <defs>
+          <linearGradient id="hook-bun" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f2b064" />
+            <stop offset="1" stop-color="#c97a35" />
+          </linearGradient>
+          <g id="hook-shrimp">
+            <path d="M-60 0 C-60 -55 10 -70 45 -35 C65 -15 55 20 25 25" fill="none" stroke="#ff8f70" stroke-width="44" stroke-linecap="round" />
+            <path d="M-60 0 C-60 -55 10 -70 45 -35 C65 -15 55 20 25 25" fill="none" stroke="#ffb59e" stroke-width="14" stroke-linecap="round" stroke-dasharray="2 26" />
+          </g>
+        </defs>
+        <ellipse cx="400" cy="500" rx="360" ry="40" fill="rgba(0,0,0,0.25)" />
+        <path d="M60 380 C60 300 740 300 740 380 C740 470 60 470 60 380 Z" fill="url(#hook-bun)" />
+        <path d="M70 360 C150 320 220 380 300 340 C380 300 440 370 520 335 C600 300 660 370 735 345 L735 380 L70 380 Z" fill="#7cc35a" />
+        <use href="#hook-shrimp" transform="translate(190 330) rotate(-10)" />
+        <use href="#hook-shrimp" transform="translate(330 315) rotate(12) scale(1.05)" />
+        <use href="#hook-shrimp" transform="translate(470 320) rotate(-6)" />
+        <use href="#hook-shrimp" transform="translate(600 335) rotate(14) scale(0.95)" />
+        <use href="#hook-shrimp" transform="translate(260 270) rotate(4) scale(0.9)" />
+        <use href="#hook-shrimp" transform="translate(410 260) rotate(-14) scale(0.95)" />
+        <use href="#hook-shrimp" transform="translate(545 275) rotate(8) scale(0.85)" />
+        <path d="M80 250 C90 110 710 110 720 250 C720 280 80 280 80 250 Z" fill="url(#hook-bun)" transform="rotate(-6 400 250) translate(0 -40)" />
+        <g fill="#fbe7c4" transform="rotate(-6 400 250) translate(0 -40)">
+          <ellipse cx="250" cy="170" rx="10" ry="5" />
+          <ellipse cx="330" cy="150" rx="10" ry="5" />
+          <ellipse cx="420" cy="145" rx="10" ry="5" />
+          <ellipse cx="510" cy="160" rx="10" ry="5" />
+          <ellipse cx="590" cy="185" rx="10" ry="5" />
+        </g>
+      </svg>
+    </div>
+    <div id="hook-title-c" class="clip" data-start="0" data-duration="4.5"><h1 id="hook-title">Diese Krabben<br />waren in <span class="y">Afrika.</span></h1></div>
+    <div id="hook-guess-c" class="clip" data-start="4.5" data-duration="4.5"><div id="hook-guess">
+      <div id="hook-guess-km">??? km</div>
+      <div id="hook-guess-sub">Schätz mal! &#8595;</div>
+    </div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hook-sandwich-wrap", { scale: 1, y: 0 }, { scale: 1.12, y: 20, duration: 4.5, ease: "none" }, 0);
+    tl.fromTo("#hook-boat", { x: 0 }, { x: -120, duration: 9, ease: "none" }, 0);
+    tl.fromTo("#hook-title", { scale: 1 }, { scale: 1.04, duration: 4.4, ease: "none" }, 0);
+    tl.to("#hook-sandwich-wrap", { scale: 0.86, y: 120, duration: 0.5, ease: "power3.out" }, 4.5);
+    tl.fromTo("#hook-guess", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 4.5);
+    // Ziffern flackern wie ein Zufallszähler, aber deterministisch
+    const seq = ["???", "481", "2.1??", "?.9??", "12.0??", "???"];
+    const km = document.querySelector("#hook-guess-km");
+    const st = { i: 0 };
+    tl.fromTo(st, { i: 0 }, {
+      i: seq.length - 1,
+      duration: 1.8,
+      ease: "none",
+      onUpdate: () => { km.textContent = seq[Math.round(st.i)] + " km"; },
+    }, 5.1);
+    tl.fromTo("#hook-guess-sub", { y: 0 }, { y: 14, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 7 }, 5);
+    tl.to("#hook-guess", { opacity: 0, duration: 0.2 }, 8.75);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
